@@ -7,11 +7,11 @@ it('login to amazon', function() {
     element(by.id('nav-link-accountList')).click();
     expect(browser.getTitle()).toEqual('Amazon Sign In');
 
-    element(by.id('ap_email')).sendKeys('a.premkumar33@gmail.com');
+    element(by.id('ap_email')).sendKeys('@gmail.com');
     // element(by.id('ap_email')).sendKeys('sivagami.premkumar@gmail.com');
     element(by.id('continue')).click();
 
-    element(by.id('ap_password')).sendKeys('Al0h0m0r@');
+    element(by.id('ap_password')).sendKeys('');
     element(by.id('signInSubmit')).click();
 
     var nameTag = element(by.id('nav-link-accountList')).$('.nav-line-1');
